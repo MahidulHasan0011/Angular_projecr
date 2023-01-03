@@ -1,0 +1,40 @@
+  <!---card-->
+
+    <div *ngIf="data" class="card" [id]="data?._id"   >
+      <!---card--img-->
+      <div class="card-img">
+          <img [src]="data?.image" alt="">
+      </div>
+      <!---card-body-->
+      <div class="card-body">
+
+          <!---card-title-price-->
+          <div class="card-title">
+              <h3>{{data?.title}}</h3>
+
+          </div>
+
+          <div class="card-date">
+              <p>{{data?.date}}</p>
+
+
+          </div>
+          <div class="card-date-design">
+            <span class="card-date-round"></span> <span class="line-card-date"></span>
+          </div>
+          <div class="card-discription">
+
+            <p>{{data?.discription}}</p>
+        </div>
+
+        <div class="buttonDesign">
+          <a>{{data.button}}</a>
+          <span class="round"></span> <span class="line"></span>
+        </div>
+      </div>
+
+
+
+  </div><!---card-end-->
+
+

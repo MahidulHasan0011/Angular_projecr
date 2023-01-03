@@ -1,0 +1,233 @@
+@import "src/theme/base.scss";
+@import "src/theme/variables";
+
+.header-main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000000000;
+}
+.navbar-top {
+  background-color: black;
+  padding: 15px 0px;
+}
+.header-top-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      i {
+        color: #cf9b67;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+      p {
+        color: #fff;
+        font-size: 12px;
+        font-family: $open-sans;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    i {
+      font-size: 17px;
+      color: #5a5a5a;
+      margin-right: 0;
+    }
+  }
+}
+
+.navbar-bottom {
+  height: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  transition-duration: 0.4s;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.navbar-bottom-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    img {
+      max-width: 170px;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 29px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    li {
+      a {
+        color: #fff;
+        padding: 0;
+        font-family: $open-sans;
+        font-size: 14px;
+        // margin-left: 33px;
+        position: relative;
+        padding-bottom: 10px;
+        overflow: hidden;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
+
+.navbar-bottom-main > ul > li > a:hover {
+  display: block;
+  border-bottom: 2px solid #cf9b67;
+  color: #cf9b67;
+  background: none;
+}
+// .navbar-bottom-main > ul > li > a::before {
+//   content: "";
+//   position: absolute;
+//   left: 1px;
+//   bottom: 20px;
+//   width: 6px;
+//   height: 6px;
+//   background-color: #cf9b67;
+// }
+// .navbar-bottom-main > ul > li > a::after {
+//   content: "";
+//   position: absolute;
+//   left: 11px;
+//   bottom: 22px;
+//   width: 0;
+//   height: 2px;
+//   background-color: #cf9b67;
+// }
+// .header-fixed {
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   box-shadow: 0 3px 5px 0 rgb(0 0 0 / 30%);
+//   background-color: #fff;
+//   color: black;
+// }
+
+/*** slide ****/
+// .overlay {
+//   display: none;
+//   width: 100%;
+//   height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: rgb(0 0 0 / 60%);
+//   z-index: 199;
+// }
+
+// .silde {
+//   display: block;
+//   width: 300px;
+//   height: 100vh;
+//   overflow-y: auto;
+//   position: fixed;
+//   left: -100%;
+//   top: 0;
+//   padding-top: 10px;
+//   background-color: #fff;
+//   border-left: 1px solid #cccccc;
+//   border-right: 2px solid #cccccc;
+//   transition: all 0.3s linear;
+//   z-index: 100000;
+// }
+
+// .slide-title,
+// .btn-menu {
+//   display: block;
+//   padding: 10px 15px 10px 30px;
+//   box-sizing: border-box;
+// }
+
+// .slide-title h3 {
+//   color: #ca3d26;
+//   font-family: $font-en-primary;
+//   font-weight: 600;
+//   font-size: 18px;
+// }
+
+// .slide-menu {
+//   display: block;
+// }
+
+// .slide-menu ul {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .slide-menu ul li {
+//   border-bottom: 1px solid #f2f2f2;
+//   display: block;
+// }
+
+// .slide-menu ul li ul li {
+//   padding-left: 20px;
+// }
+
+// .slide-menu ul li a {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 10px;
+//   padding: 13px 15px 13px 30px;
+//   font-family: $font-en-primary;
+//   font-weight: 500;
+//   color: #333;
+//   font-size: 16px;
+//   text-transform: capitalize;
+//   transition: all 0.3s linear;
+// }
+
+// .slide-menu ul li a:hover {
+//   color: #ca3d26;
+// }
+
+// .cross {
+//   display: block;
+// }
+
+// .cross span {
+//   background-color: #fff;
+//   width: 40px;
+//   height: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #333;
+//   font-size: 17px;
+//   position: absolute;
+//   top: 11px;
+//   right: 0;
+//   cursor: pointer;
+// }
+
+// @media(max-width: 1100px) {
+//   .overlay {
+//     display: block;
+//   }
+//   .side-nav-active {
+//     left: 0;
+//   }
+// }

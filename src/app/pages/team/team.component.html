@@ -1,0 +1,61 @@
+<div class="team-area" #team>
+  <div class="container">
+    <div class="team-area-main">
+      <div class="team-top">
+        <h2>Our Chefs</h2>
+      </div>
+      <div class="team-swiper">
+        <swiper
+          [slidesPerView]="1"
+          [loop]="false"
+          [speed]='2500'
+          [spaceBetween]="20"
+          [pagination]="{
+              clickable: true
+            }"
+          [breakpoints]="{
+              '500': {
+                  slidesPerView: 2
+
+                },
+              '660': {
+                slidesPerView: 3
+
+              },
+              '1000': {
+                slidesPerView: 4
+              },
+              '1230': {
+                slidesPerView: 5
+              }
+            }"
+          class="mySwiper"
+        >
+          <ng-template swiperSlide *ngFor="let data of chefs">
+            <div class="slider-card">
+              <div class="food-menu-img">
+                <img [src]='data.image' alt="">
+                <div class="member-social-bookmark">
+                  <ul *ngIf="data.socialLinks && data.socialLinks.length">
+                    <li *ngFor="let link of data.socialLinks">
+                      <a [href]="link.value">
+                        <i [class]="getSocialClass(link.type)"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="food-menu-details-two">
+                <h3>{{data.name}}</h3>
+                <p>{{data.description}}</p>
+              </div>
+            </div>
+          </ng-template>
+
+
+        </swiper>
+      </div>
+    </div>
+  </div>
+</div>

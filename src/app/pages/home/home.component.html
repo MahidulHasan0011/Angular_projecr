@@ -1,0 +1,95 @@
+<div class="section-1-container">
+  <div class="section-1">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="section-1-main">
+        <div class="content">
+          <div class="logo">
+            <img src="../../../assets/images/brand/logo.png" alt="" />
+          </div>
+          <h2>SURPRISE YOUR PLATE</h2>
+          <h3>Fine Food + Drinks</h3>
+          <span class="scroll-down">Scroll Down</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="container">
+
+    <div class="section6">
+      <div class="container">
+        <div class="bottom-section">
+          <img src="./assets/home/aa.png">
+        </div>
+
+        <div class="top-section">
+      <!---title-->
+      <div class="top">
+        <span >
+
+          Month of March
+
+        </span>
+      </div>
+
+      <div class="title">
+          <h3>
+            UPCOMING EVENT
+          </h3>
+
+      </div>
+      <div class="card-date-design">
+        <span class="line-card-date"></span> <span class="card-date-round"></span> <span class="line-card-date"></span>
+      </div>
+
+      <div class="section6-main">
+            <swiper
+              [slidesPerView]="1.3"
+              [spaceBetween]="10"
+              [navigation]="false"
+              [breakpoints]="{
+              '410': {
+                      slidesPerView: 1
+              },
+              '510': {
+                      slidesPerView: 1
+              },
+              '610': {
+                      slidesPerView: 1
+              },
+              '750': {
+                  slidesPerView: 2
+              },
+
+              '1030': {
+                  slidesPerView: 3
+              }
+              }"
+              class="mySwiper"
+          >
+          <ng-template swiperSlide *ngFor="let data of upcomingevent">
+
+              <app-upcoming-event [data]="data"></app-upcoming-event>
+          </ng-template>
+      </swiper>
+
+      </div>
+        </div>
+      <div  class="bellow-section">
+        <img src="./assets/home/pata.png">
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+</div>

@@ -1,0 +1,146 @@
+@import'./../../../../theme/variables';
+.card{
+    display: block;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 5%);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.card-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-img img{
+    height: 180px;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+.card-body{
+    display: block;
+    padding: 15px 15px 0px 15px;
+    box-sizing: border-box;
+}
+
+.brand{
+    display: block;
+    width: 100%;
+    margin-bottom: 3px;
+}
+.brand span{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-family: "Open Sans";
+    font-style: normal;
+    display: block;
+}
+.card-body {
+  border: 1px solid #eaeaea;
+  border-width: 0 1px 1px;
+  background: #fff;
+  padding: 30px;
+  min-height: 270px;
+}
+.card-title h3 {
+  font-size: 22px;
+  color: #000;
+  font-family: "Oswald";
+  letter-spacing: .5px;
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+
+.card-date {
+  display: block;
+  position: relative;
+  color: #6b6b6b;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 18px;
+  font-family: "Oswald";
+
+  // padding-bottom: 20px;
+  line-height: 21px;
+}
+.card-date-design {
+  display: flex;
+  margin-bottom: 18px;
+
+  align-items: center;
+  gap: 5px;
+}
+.card-discription{
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+.card-date-round{
+  width: 5px;
+  height: 5px;
+  background-color: #cf9b67;
+  border-radius: 50%;
+  // transition: all 0.3s ease;
+  // opacity: 1;
+}
+
+span.line-card-date {
+
+  width: 40px;
+  height: 2px;
+  background-color: #cf9b67;
+  // transition: all 0.3s ease;
+}
+
+
+
+
+
+
+.buttonDesign a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #cf9b67;
+  position: relative;
+}
+
+
+.buttonDesign {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.round {
+  width: 5px;
+  height: 5px;
+  background-color: #cf9b67;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+span.line {
+  width: 0px;
+  height: 2px;
+  background-color: #cf9b67;
+  transition: all 0.3s ease;
+}
+
+.buttonDesign:hover .round{
+  width: 5px;
+  height: 5px;
+  background-color: #cf9b67;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.buttonDesign:hover .line{
+  width: 40px;
+  height: 2px;
+  background-color: #cf9b67;
+  transition: all 0.3s ease;
+}

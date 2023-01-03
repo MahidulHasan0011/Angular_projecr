@@ -1,0 +1,225 @@
+@import "../../../../theme/_base.scss";
+@import "./../../../../theme/variables";
+.section-2 {
+  margin-top: -140px;
+  display: block;
+  background: #cf9b67;
+  padding: 100px 0px;
+  .section-2-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+
+      form {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 35% 55% 20%;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        h2 {
+          font-size: 36px;
+          color: #fff;
+          font-family: $Oswald;
+          letter-spacing: 0.5px;
+          margin: 0;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+input[type="text"] {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 16px;
+  height: 58px;
+  line-height: 58px;
+  outline: none;
+  background: none;
+  transition: 0.3s ease;
+}
+input[type="text"]:focus {
+  padding-left: 30px;
+}
+.button {
+  text-transform: uppercase;
+  height: 58px;
+  border-radius: 10px;
+  background-color: #fff;
+  line-height: 58px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #cf9a67;
+  font-family: $Oswald;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 0;
+  position: relative;
+  transition: 0.3s ease;
+}
+.button:hover {
+  background-color: #212121;
+  border-color: #212121;
+  color: #fff;
+}
+
+.section-3 {
+  background: #212121;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.section-3-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  .elm {
+    color: #fff;
+  }
+  .elm-1 {
+    .logo {
+      img {
+        max-width: 170px;
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+    p {
+      color: #999999;
+      font-family: $open-sans;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+    a {
+      text-transform: uppercase;
+      font-family: $Oswald;
+      color: #cf9b67;
+      transition-duration: 0.3s;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+.elm-1 > a::before {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #cf9b67;
+  opacity: 1;
+}
+
+.elm-1 > a:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 29px;
+  margin-left: 18px;
+  margin-top: -1px;
+  height: 2px;
+  background-color: #cf9b67;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.title {
+  display: block;
+  font-size: 22px;
+  line-height: 22px;
+  color: #fff;
+  font-family: $Oswald;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 6px;
+  height: 6px;
+  background-color: #cf9b67;
+  border-radius: 6px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  bottom: 1px;
+  width: 29px;
+  height: 2px;
+  background-color: #cf9b67;
+}
+
+.elm-2 > p {
+  color: #999999;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-family: $open-sans;
+  line-height: 22px;
+  span {
+    color: #cf9b67;
+    text-transform: uppercase;
+  }
+}
+
+.item-tweet {
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-family: $open-sans;
+}
+.item-tweet > i {
+  float: left;
+  width: 10%;
+  color: #cf9b67;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.item-tweet > div p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.item-tweet > div p a {
+  color: #999999;
+  transition-property: all;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-family: $open-sans;
+  display: inline-block;
+}
+
+.item-tweet > div span {
+  color: #cf9b67;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
